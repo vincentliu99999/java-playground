@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 public class FilterBeforeJava8 {
   private static final String NAME_TO_REMOVE = "vincent";
+
   public static void main(String[] args) {
     Logger logger = Logger.getLogger("BeforeJava8");
 

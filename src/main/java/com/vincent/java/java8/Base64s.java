@@ -4,12 +4,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 /**
- * getEncoder
- * getDecoder
- * getUrlEncoder
- * getUrlDecoder
- * getMimeEncoder
- * getMimeDecoder
+ * getEncoder getDecoder getUrlEncoder getUrlDecoder getMimeEncoder getMimeDecoder
  */
 public class Base64s {
   public static void main(String[] args) {

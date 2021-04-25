@@ -14,8 +14,11 @@ public class FilterNowJava8 {
     List<String> lines = Arrays.asList("spring", "node", NAME_TO_REMOVE);
 
     List<String> result = lines.stream() // convert list to stream
-        .filter(line -> !NAME_TO_REMOVE.equals(line))
-        .collect(Collectors.toList()); // collect the output and convert streams to a List
+        .filter(line -> !NAME_TO_REMOVE.equals(line)).collect(Collectors.toList()); // collect the
+                                                                                    // output and
+                                                                                    // convert
+                                                                                    // streams to a
+                                                                                    // List
 
     result.forEach(logger::info); // output : spring, node
 

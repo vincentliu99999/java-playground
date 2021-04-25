@@ -13,41 +13,41 @@ public class SortWithoutLambda {
 
     System.out.println("Before Sort");
     for (Developer developer : listDevs) {
-        System.out.println(developer);
+      System.out.println(developer);
     }
-    
-    //sort by age
+
+    // sort by age
     Collections.sort(listDevs, new Comparator<Developer>() {
-        @Override
-        public int compare(Developer o1, Developer o2) {
-            return o1.getAge() - o2.getAge();
-        }
+      @Override
+      public int compare(Developer o1, Developer o2) {
+        return o1.getAge() - o2.getAge();
+      }
     });
 
-    // sort by name	
+    // sort by name
     // Collections.sort(listDevs, new Comparator<Developer>() {
-    //     @Override
-    //     public int compare(Developer o1, Developer o2) {
-    //         return o1.getName().compareTo(o2.getName());
-    //     }
+    // @Override
+    // public int compare(Developer o1, Developer o2) {
+    // return o1.getName().compareTo(o2.getName());
+    // }
     // });
-                
+
     // sort by salary
     // Collections.sort(listDevs, new Comparator<Developer>() {
-    //     @Override
-    //     public int compare(Developer o1, Developer o2) {
-    //         return o1.getSalary().compareTo(o2.getSalary());
-    //     }
-    // });	
+    // @Override
+    // public int compare(Developer o1, Developer o2) {
+    // return o1.getSalary().compareTo(o2.getSalary());
+    // }
+    // });
 
     System.out.println("After Sort");
     for (Developer developer : listDevs) {
-        System.out.println(developer);
+      System.out.println(developer);
     }
-    
-}
 
-private static List<Developer> getDevelopers() {
+  }
+
+  private static List<Developer> getDevelopers() {
 
     List<Developer> result = new ArrayList<Developer>();
 
@@ -55,8 +55,8 @@ private static List<Developer> getDevelopers() {
     result.add(new Developer("alvin", new BigDecimal("80000"), 20));
     result.add(new Developer("jason", new BigDecimal("100000"), 10));
     result.add(new Developer("iris", new BigDecimal("170000"), 55));
-    
+
     return result;
 
-}
+  }
 }

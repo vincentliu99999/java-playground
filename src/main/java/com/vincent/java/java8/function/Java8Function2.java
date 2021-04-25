@@ -13,5 +13,5 @@ public class Java8Function2 {
 
     System.out.println(result);
 
-}
+  }
 }

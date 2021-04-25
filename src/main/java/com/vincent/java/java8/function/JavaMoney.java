@@ -11,5 +11,5 @@ public class JavaMoney {
 
     System.out.println(apply);
 
-}
+  }
 }
