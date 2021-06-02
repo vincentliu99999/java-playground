@@ -1,5 +1,7 @@
 # Java Playground
 
+[The Java&trade; Tutorials](https://docs.oracle.com/javase/tutorial/index.html)
+
 ## java8
 
 - <https://mkyong.com/tutorials/java-8-tutorials/>
