@@ -6,19 +6,13 @@ public class ObjectSample {
     Member nameOnly = new Member("vincent");
     Member nameAnSex = new Member("benson", "male");
 
-    System.out.println(
-        "nullMember, name: " + nullMember.getName() + ", sex: " + nullMember.getSex());
-    System.out.println(
-        "nameOnly with name: " + nameOnly.getName() + ", sex: " + nullMember.getSex());
-    System.out.println(
-        "nameAnSex with name: " + nameAnSex.getName() + ", sex: " + nameAnSex.getSex());
+    System.out.println("nullMember" + nullMember.toString());
+    System.out.println("nameOnly" + nameOnly.toString());
+    System.out.println("nameAnSex" + nameAnSex.toString());
+    
     try {
       Member nameAnWrongSex = new Member("vincent", "tiger");
-      System.out.println(
-          "nameAnWrongSex with name: "
-              + nameAnWrongSex.getName()
-              + ", sex: "
-              + nameAnWrongSex.getSex());
+      System.out.println("nameAnWrongSex" + nameAnWrongSex.toString());
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -40,6 +34,11 @@ class Member {
       throw new Exception("unknown sex");
     }
     this.sex = sex;
+  }
+
+  @Override
+  public String toString() {
+    return "Member [name=" + name + ", sex=" + sex + "]";
   }
 
   private String name;
